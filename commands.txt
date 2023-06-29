@@ -1,0 +1,3 @@
+Start Server: npx expo start
+
+install font: npx expo install expo-font @expo-google-fonts/inter
