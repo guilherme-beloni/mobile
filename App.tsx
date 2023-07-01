@@ -6,8 +6,9 @@ import {
   Inter_800ExtraBold,
 } from "@expo-google-fonts/inter";
 
-import { StyleSheet, Text, View, StatusBar } from "react-native";
+import { StatusBar } from "react-native";
 import { Loading } from "./src/components/Loading";
+import { Home } from "./src/screens/Home";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,23 +23,13 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Alô BB!!!!</Text>
-      <StatusBar barStyle='light-content' backgroundColor='transparent' translucent={true}/>
-    </View>
+      <>
+        <Home/>
+        <StatusBar barStyle='light-content' backgroundColor='transparent' translucent={true}/>
+      </>
+      
+    
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#09090A",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    color: "white",
-    fontFamily: 'Inter_800ExtraBold'
-   
-  },
-});
+
