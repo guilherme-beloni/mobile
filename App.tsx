@@ -1,3 +1,4 @@
+import './src/lib/dayjs'
 import {
   useFonts,
   Inter_400Regular,
