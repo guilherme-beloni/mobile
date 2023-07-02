@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         background: '#09090a',
-        zinc: '#1C1C1C',
-        zincb: '#363636',
+        zinc: '#18181B',
+        zincb: '#222224',
         
       },
       fontFamily: {
